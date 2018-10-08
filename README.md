@@ -1,3 +1,9 @@
+
+## Fix Issues with pipenv on Ubuntu
+https://github.com/pypa/pipenv/issues/2924
+
+pip install --user git+https://github.com/pypa/pipenv.git
+
 # snapshotanalyzer
 
 Demo project to manage AWS EC2 instances snapshots
@@ -14,9 +20,8 @@ shotty uses the configuration file created by the AWS cli. e.g.
 
 ## Running
 
-'pipenv run "python shotty/shotty.py"'
+'pipenv run "python shotty/shotty.py < command>
+<--project=PROJECT>"'
 
-## Fix Issues with pipenv on Ubuntu
-https://github.com/pypa/pipenv/issues/2924
-
-pip install --user git+https://github.com/pypa/pipenv.git
+*command* is list start, or stop_instances
+*project* is optional
