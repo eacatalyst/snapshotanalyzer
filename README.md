@@ -15,3 +15,8 @@ shotty uses the configuration file created by the AWS cli. e.g.
 ## Running
 
 'pipenv run "python shotty/shotty.py"'
+
+## Fix Issues with pipenv on Ubuntu
+https://github.com/pypa/pipenv/issues/2924
+
+pip install --user git+https://github.com/pypa/pipenv.git
